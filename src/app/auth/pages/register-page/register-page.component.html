@@ -1,0 +1,84 @@
+<h2>Validaciones Reactivas</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+
+    <form  >
+  <!-- Nombre -->
+      <div class="mb-3">
+        <label  class="form-label">Nombre</label>
+        <input type="text" class="form-control"  placeholder="Nombre del usuario">
+        <span class="form-text text-danger">
+          Debe de ser en formato de nombre y apellido
+        </span>
+      </div>
+
+
+
+      <!-- Username -->
+        <div class="mb-3">
+          <label  class="form-label">Username</label>
+          <input  type="text" class="form-control" placeholder="Nombre código del usuario" >
+          <span class="form-text text-danger">
+            El username no puede ser Strider
+          </span>
+        </div>
+<!-- Email -->
+<div class="mb-3">
+  <label class="form-label">Email</label>
+  <input type="email" class="form-control" placeholder="Email del usuario" autocomplete="email">
+  <span class="form-text text-danger">
+    mensaje de error del email
+  </span>
+</div>
+      <!-- Password -->
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" placeholder="Password de su cuenta" autocomplete="new-password">
+          <span class="form-text text-danger">
+            La contraseña debe de ser mayor de 6 caracteres.
+          </span>
+        </div>
+
+      <!-- Password2 -->
+        <div class="mb-3">
+          <label  class="form-label">Confirmar password</label>
+          <input type="password" class="form-control" placeholder="Confirmar la contraseña">
+          <span class="form-text text-danger">
+            Las contraseñas deben de ser iguales
+          </span>
+        </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary float-end" type="submit">
+            Crear
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<h2>Form Valid: </h2>
+<h2>Form Status: </h2>
+<h2>Form Pending: </h2>
+<h2>Form errors</h2>
+<pre>{{ 'formulario' | json }}</pre>
+
+<h5>Nombre</h5>
+<pre>{{ 'formulario' | json }}</pre>
+
+<h5>Username</h5>
+<pre>{{ 'formulario' | json }}</pre>
+
+<h5>Email</h5>
+<pre>{{ 'formulario' | json }}</pre>
+
+<h5>Password</h5>
+<pre>{{ 'formulario' | json }}</pre>
+
+<h5>Confirmar</h5>
+<pre>{{ 'formulario' | json }}</pre>
